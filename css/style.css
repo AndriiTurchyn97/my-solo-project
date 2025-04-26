@@ -1,0 +1,126 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    color: #434455;
+}
+ul {
+    list-style-type: none;
+}
+a{
+text-decoration: none;
+}
+
+.logo {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #4d5ae5;
+}
+
+.header-logo .logo-part {
+    color: #2e2f42;
+}
+.footer-logo .logo-part {
+    color: #f4f4fd;
+}
+
+.btn-nav {
+font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+       
+}
+.btn-nav:hover,
+.btn-nav:focus {
+    color: #404BBF;
+}
+
+.link-mail-phone {
+     font-style: normal;
+}
+.link-address {
+    color: #434455;
+   
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+    
+}
+.link-address:hover,
+.link-address:focus
+ {
+    color: #404BBF
+}
+.title-one{
+    font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #fff;
+}
+
+
+.p-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+   
+
+}
+.title-our-two {
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2e2f42;
+        text-transform: capitalize
+}
+.team {
+    background-color: #FFFFFF
+}
+
+.title-our-three {
+    font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: #2e2f42;
+}
+
+
+
+
+.button-order {
+    font-family: 'Roboto' sans-serif;
+    background: #4d5ae5;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+.button-order:hover,
+.button-order:focus { 
+ background-color: #404BBF;
+}
+.page-start {
+    background: #2e2f42;
+    color: #fff;
+}
+.sect-team {
+    background: #f4f4fd;
+    text-align: center;
+}
+.page-footer {
+    background-color: #2e2f42;
+        color: #f4f4fd;
+}
