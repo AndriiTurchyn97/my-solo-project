@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Effective Solutions for Your Business</title>
+    <title>Watch</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -11,207 +11,77 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <header>
-      <nav>
-        <a class="logo header-logo" href="./index.html"
-          >Web<span class="logo-part">Studio</span></a
-        >
-        <ul class="ssct-nav">
-          <li><a href="./index.html" class="btn-nav">Studio</a></li>
-          <li><a href="" class="btn-nav">Portfolio</a></li>
-          <li><a href="" class="btn-nav">Contacts</a></li>
-        </ul>
-      </nav>
-      <address class="link-mail-phone">
-        <ul>
-          <li>
-            <a href="mailto:info@devstudio.com" class="link-address"
-              >info@devstudio.com</a
+    <header class="header">
+      <div class="container header-flex">
+        <nav class="header-nav">
+          <a class="logo" href="/index.html">watchcharm</a>
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="#">Home</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="#">About Us</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="#">Catalog</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="#">Sale</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="#">Reviews</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-soc-list">
+          <li class="header-soc-item">
+            <a
+              class="header-soc-link"
+              href="https://www.facebook.com/goITclub/"
             >
+              <svg class="header-soc-svg" width="20" height="20">
+                <use href="./img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
           </li>
-          <li>
-            <a href="tel:+110001111111" class="link-address"
-              >+11 (000) 111-11-11</a
+          <li class="header-soc-item">
+            <a
+              class="header-soc-link"
+              href="https://www.instagram.com/goitclub/"
             >
-            <br />
+              <svg class="header-soc-svg" width="20" height="20">
+                <use href="./img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-soc-item">
+            <a class="header-soc-link" href="https://www.youtube.com/c/GoIT">
+              <svg class="header-soc-svg" width="20" height="20">
+                <use href="./img/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
           </li>
         </ul>
-      </address>
+        <button class="header-btn" type="button">
+          <svg class="header-menu-burger" width="34" height="34">
+            <use href="/img/sprite.svg#icon-menu-burger"></use>
+          </svg>
+        </button>
+      </div>
     </header>
-    <main>
-      <section class="page-start">
-        <h1 class="title-one">Effective Solutions for Your Business</h1>
-        <button type="button" class="button-order">Order Service</button>
-      </section>
-      <section>
-        <h2>Solutions</h2>
-        <ul>
-          <li>
-            <h3 class="title-our-three">Strategy</h3>
-            <p class="p-text">
-              Our goal is to identify the business problem to walk away with the
-              perfect and creative solution.
-            </p>
-          </li>
-
-          <li>
-            <h3 class="title-our-three">Punctuality</h3>
-            <p class="p-text">
-              Bring the key message to the brand's audience for the best price
-              within the shortest possible time.
-            </p>
-          </li>
-
-          <li>
-            <h3 class="title-our-three">Diligence</h3>
-            <p class="p-text">
-              Research and confirm brands with the strongest digital growth
-              opportunities and minimize risk.
-            </p>
-          </li>
-
-          <li>
-            <h3 class="title-our-three">Technologies</h3>
-            <p class="p-text">
-              Design practice focused on digital experiences. We bring forth a
-              deep passion for problem-solving.
-            </p>
-          </li>
-        </ul>
-      </section>
-      <section class="sect-team">
-        <h2 class="title-our-two">Our Team</h2>
-        <ul>
-          <li class="team">
-            <img
-              src="./images/mark.jpg"
-              alt="mark_guerrero"
-              width="264"
-              height="260"
-            />
-            <h3 class="title-our-three">Mark Guerrero</h3>
-            <p class="p-text">Product Designer</p>
-          </li>
-          <li class="team">
-            <img
-              src="./images/tom.jpg"
-              alt="tom_ford"
-              width="264"
-              height="260"
-            />
-            <h3 class="title-our-three">Tom Ford</h3>
-            <p class="p-text">Frontend Developer</p>
-          </li>
-
-          <li class="team">
-            <img
-              src="./images/camila.jpg"
-              alt="camila_garcia"
-              width="264"
-              height="260"
-            />
-            <h3 class="title-our-three">Camila Garcia</h3>
-            <p class="p-text">Marketing</p>
-          </li>
-          <li class="team">
-            <img
-              src="./images/daniel.jpg"
-              alt="daniel_wilson"
-              width="264"
-              height="260"
-            />
-            <h3 class="title-our-three">Daniel Wilson</h3>
-            <p class="p-text">UI Designer</p>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2 class="title-our-two">Our Portfolio</h2>
-        <ul>
-          <li>
-            <img
-              src="./images/banking-app.jpg"
-              alt="banking-app"
-              width="360"
-              height="300"
-            />
-            <h3 class="title-our-three">Banking App</h3>
-            <p class="p-text">App</p>
-          </li>
-          <li>
-            <img
-              src="./images/cashless-payment.jpg"
-              alt="cashless-payment"
-              width="360"
-              height="300"
-            />
-
-            <h3 class="title-our-three">Cashless Payment</h3>
-            <p class="p-text">Marketing</p>
-          </li>
-          <li>
-            <img
-              src="./images/meditation-app.jpg"
-              alt="meditation-app"
-              width="360"
-              height="300"
-            />
-
-            <h3 class="title-our-three">Meditation App</h3>
-            <p class="p-text">App</p>
-          </li>
-          <li>
-            <img
-              src="./images/taxi-service.jpg"
-              alt="taxi-service"
-              width="360"
-              height="300"
-            />
-
-            <h3 class="title-our-three">Taxi Service</h3>
-            <p class="p-text">Marketing</p>
-          </li>
-          <li>
-            <img
-              src="./images/screen-illustrations.jpg"
-              alt="screen-illustrations"
-              width="360"
-              height="300"
-            />
-
-            <h3 class="title-our-three">Screen Illustrations</h3>
-            <p class="p-text">Design</p>
-          </li>
-          <li>
-            <img
-              src="./images/online-courses.jpg"
-              alt="online-courses"
-              width="360"
-              height="300"
-            />
-            <h3 class="title-our-three">Online Courses</h3>
-            <p class="p-text">Marketing</p>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer class="page-footer">
-      <a class="logo footer-logo" href="./index.html"
-        >Web<span class="logo-part">Studio</span></a
-      >
-      <p class="footer-text p-text">
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
-    </footer>
+    <main></main>
+    <footer></footer>
   </body>
 </html>
