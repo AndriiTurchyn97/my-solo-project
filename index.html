@@ -26,22 +26,22 @@
           <a class="logo" href="/index.html">watchcharm</a>
           <ul class="header-nav-list">
             <li class="header-nav-item">
-              <a class="header-nav-link" href="#">Home</a>
+              <a class="header-nav-link" href="#home">Home</a>
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="#">About Us</a>
+              <a class="header-nav-link" href="#about-us">About Us</a>
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="#">Catalog</a>
+              <a class="header-nav-link" href="#catalog">Catalog</a>
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="#">Sale</a>
+              <a class="header-nav-link" href="#sale">Sale</a>
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="#">Reviews</a>
+              <a class="header-nav-link" href="#reviews">Reviews</a>
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="#">Contact Us</a>
+              <a class="header-nav-link" href="#contact-us">Contact Us</a>
             </li>
           </ul>
         </nav>
@@ -81,61 +81,94 @@
         </button>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section class="hero">
+        <div class="container">
+         <div class="hero-div-item">
+            <div class="hero-title-txt">
+              <h1 class="hero-title">Welcome to our <br> <span class="hero-title-span">collection</span> of <br> premium watches</h1>
+              <p class="hero-txt">Our watches are not just timepieces, but also an expression of your personality and lifestyle. From classic designs to modern ones, we have a watch to suit every taste and occasion.</p>
+            </div>
+          <div class="hero-list-btn">
+              <ul class="hero-list">
+                <li class="hero-list-item"><img class="hero-item-img" src="./img/image_hero/foto_dsk_1-min.png" alt=""></li>
+                <li class="hero-list-item"><img class="hero-item-img" src="./img/image_hero/foto_dsk_2-min.png" alt=""></li>
+                <li class="hero-list-item"><img class="hero-item-img" src="./img/image_hero/foto_dsk_3-min.png" alt=""></li>
+              </ul>
+              <a class="hero-btn" href="#footer">Scroll down</a>
+          </div>
+         </div>
+          <picture class="hero-img">
+            <source media="(min-width: 1280px)" srcset="./img/image_hero/rectangle_dsk-min.jpg 1x, ./img/image_hero/rectangle_dsk@2x-min.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./img/image_hero/rectangle_tab-min.jpg 1x, ./img/image_hero/rectangle_tab@2x-min.jpg 2x">
+            <source media="(max-width: 767px)" srcset="./img/image_hero/rectangle_mob-min.jpg 1x, ./img/image_hero/rectangle_mob@2x-min.jpg 2x">
+            <img src="/img/image_hero/rectangle_dsk-min.jpg" alt="watch" width="1150">
+          </picture>
+        </div>
+      </section>
+    </main>
     <footer class="footer">
       <div class="container footer-container">
        <div class="footer-bg">
-          <a class="footer-logo" href="/index.html">watchcharm</a>
-          <ul class="footer-soc-list">
-            <li class="footer-soc-item">
-              <a href="">
-                <svg class="footer-soc-svg" width="18" height="18">
-                  <use href="/img/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-soc-item">
-              <a href="">
-                <svg class="footer-soc-svg" width="18" height="18">
-                  <use href="/img/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-soc-item">
-              <a href="">
-                <svg class="footer-soc-svg" width="18" height="18">
-                  <use href="/img/sprite.svg#icon-youtube"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <address class="footer-address"></address>
-            <button class="footer-address-btn"><a class="footer-adress-tel" href="tel:+380684439426">+380 (68) 443-94-26</a></button>
+          <div class="footer-contact">
+           <div class="footer-logo-soc">
+              <a class="footer-logo" href="/index.html">watchcharm</a>
+              <ul class="footer-soc-list">
+                <li class="footer-soc-item">
+                  <a href="">
+                    <svg class="footer-soc-svg" width="18" height="18">
+                      <use href="/img/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-soc-item">
+                  <a href="">
+                    <svg class="footer-soc-svg" width="18" height="18">
+                      <use href="/img/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-soc-item">
+                  <a href="">
+                    <svg class="footer-soc-svg" width="18" height="18">
+                      <use href="/img/sprite.svg#icon-youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+           </div>
+            <address class="footer-address"><button class="footer-address-btn"><a class="footer-adress-tel" href="tel:+380684439426">+380 (68) 443-94-26</a></button></address>
+              
+          </div>
           </address>
-          <h3 class="footer-title">
-            Have the time of your life with our watches: where high-class
-            craftsmanship meets impeccable design
-          </h3>
+          <div class="footer-title-div">
+            <h3 class="footer-title">
+              Have the time of your life with our watches: where high-class
+              craftsmanship meets impeccable design
+            </h3>
+          </div>
           <div class="footer-nav-adress">
             <nav class="footer-nav">
               <ul class="footer-nav-list">
-                <li class="footer-nav-item"><a class="footer-nav-link">Home</a></li>
-                <li class="footer-nav-item"><a class="footer-nav-link">About Us</a></li>
-                <li class="footer-nav-item"><a class="footer-nav-link">Catalog</a></li>
-                <li class="footer-nav-item"><a class="footer-nav-link">Sale</a></li>
-                <li class="footer-nav-item"><a class="footer-nav-link">Reviews</a></li>
-                <li class="footer-nav-item"><a class="footer-nav-link">Contact Us</a></li>
+                <li class="footer-nav-item"><a href="#home" class="footer-nav-link">Home</a></li>
+                <li class="footer-nav-item"><a href="#about-us" class="footer-nav-link">About Us</a></li>
+                <li class="footer-nav-item"><a href="catalog" class="footer-nav-link">Catalog</a></li>
+                <li class="footer-nav-item"><a href="sale" class="footer-nav-link">Sale</a></li>
+                <li class="footer-nav-item"><a href="reviews" class="footer-nav-link">Reviews</a></li>
+                <li class="footer-nav-item"><a href="contact-us" class="footer-nav-link">Contact Us</a></li>
               </ul>
             </nav>
             <address class="footer-address-location">
               1678 S. Pioneer Road Salt Lake City UT 84104
             </address>
           </div>
-          <p class="footer-copyright">© 2023 The Watch Spot. All rights reserved.</p>
-          <ul class="footer-legal-list">
-            <li class="footer-legal-item"><a class="footer-legal-link" href="#">Terms of Service</a></li>
-            <li class="footer-legal-item"><a class="footer-legal-link" href="#">Privacy Policy</a></li>
-          </ul>
+        <div class="footer-copyright-div">
+            <p class="footer-copyright">© 2023 The Watch Spot. All rights reserved.</p>
+            <ul class="footer-legal-list">
+              <li class="footer-legal-item"><a class="footer-legal-link" href="#">Terms of Service</a></li>
+              <li class="footer-legal-item"><a class="footer-legal-link" href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
        </div>
       </div>
     </footer>
