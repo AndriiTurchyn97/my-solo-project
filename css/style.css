@@ -105,7 +105,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    
 }
 
 .header-btn {
@@ -149,9 +149,6 @@ button {
     .logo {
         padding: 34px 0;
     }
-    .header-flex {
-        padding: 0 32px;
-    }
 }
 
 @media screen and (min-width: 1280px) {
@@ -181,11 +178,11 @@ button {
         justify-content: center;
         align-items: center;
         font-weight: 500;
-            font-size: 14px;
-            line-height: 1.28571;
-            text-align: center;
-            color: #0c0c0c;
-            position: relative;
+        font-size: 14px;
+        line-height: 1.28571;
+        text-align: center;
+        color: #0c0c0c;
+        position: relative;
     }
 
 
@@ -215,9 +212,7 @@ button {
 
     .header-soc-list {
         display: flex;
-        
         gap: 10px;
-
     }
 
         .header-soc-link {
@@ -608,30 +603,54 @@ button {
 }
 
 .advertisement-title {
+    margin-bottom: 28px;
     color: #fbfbfb;
 }
-
-.title-two-style {}
 
 .advertisement-span {
     color: rgba(251, 251, 251, 0.5);
 }
 
-.advertisement-btn {}
+.advertisement-btn {
+    background-color: transparent;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 251, 251, 0.5);
+    padding: 15px 43px;
+    color: rgb(251, 251, 251, 0.5);
+    transition: background-color 250ms ease-in, color 250ms ease-in;
+}
+
+.advertisement-btn:hover,
+.advertisement-btn:focus {
+    color: #0c0c0c;
+    background-color: #fbfbfb;
+}
+
 @media screen and (min-width: 768px) {
     .advertisement {
         padding: 40px 0;
     }
     
-        .advertisement-bg {}
+        .advertisement-bg {
+            padding: 80px 64px;
+        }
     
-        .advertisement-title {}
+        .advertisement-bg::before {
+            background-image: url(/img/advertisement/tablet70-min.jpg);
+        }
     
-        .title-two-style {}
-    
-        .advertisement-span {}
-    
-        .advertisement-btn {}
+        @media screen and (min-resolution: 2x) {
+            .advertisement-bg::before {
+                background-image: url(/img/advertisement/tablet70@2x-min.jpg);
+            }
+        }
+        
+        .advertisement-title {
+            margin-bottom: 32px;
+                letter-spacing: -0.01em;
+                color: #fbfbfb;
+        }
+
 }
 
 @media screen and (min-width: 1280px) {
@@ -639,22 +658,200 @@ button {
         padding: 50px 0;
     }
     
-        .advertisement-bg {}
+        .advertisement-bg {
+            display: flex;
+            gap: 140px;
+            padding: 83px 80px;
+        }
     
-        .advertisement-title {}
+        .advertisement-bg::before {
+            background-image: url(/img/advertisement/desktop70-min.jpg);
+        }
     
-        .title-two-style {}
-    
-        .advertisement-span {}
-    
-        .advertisement-btn {}
+        @media screen and (min-resolution: 2x) {
+            .advertisement-bg::before {
+                background-image: url(/img/advertisement/desktop70-min.jpg);
+            }
+        }
+
+        
+        .advertisement-title {
+            margin-bottom: 0;
+        }
+
+        .advertisement-btn {
+            align-self: flex-start;
+            white-space: nowrap;
+        }
 }
 /* ___________________________advertisement__________________________________ */
-/* __________________________________________________________________________ */
-@media screen and (min-width: 768px) {}
+/* ___________________________sale___________________________________________ */
+.sale-flex {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
 
-@media screen and (min-width: 1280px) {}
-/* __________________________________________________________________________ */
+.sale {
+    padding: 30px 0;
+}
+
+.sale-div-photo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.sale-list {
+    display: flex;
+    gap: 5px;
+}
+
+.sale-list-item {
+        border: 1px solid rgba(12, 12, 12, 0.05);
+        border-radius: 16px;
+        padding: 13px 14px;
+        background: #f3f3f3;
+}
+
+.sale-hero-img {
+    border: 1px solid rgba(12, 12, 12, 0.05);
+    border-radius: 30px;
+    background-color: #f3f3f3;
+    padding: 50px;
+}
+
+.sale-commander {
+    border-radius: 30px;
+    background-color: #3350e9;
+    color: #fbfbfb;
+    padding: 48px 28px;
+}
+
+.commander-title {
+    font-weight: 600px;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.commander-tag {
+    opacity: 0.5;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.commander-list-price {
+    display: flex;
+    gap: 9px;
+    margin-bottom: 28px;
+    align-items: center;
+}
+
+.commander-item-one {
+    background: rgba(251, 251, 251, 0.1);
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+
+.commander-item-two {
+    opacity: 0.5;
+    text-decoration: line-through;
+    font-size: 12px;
+    font-weight: 400px;
+}
+
+.sale-hero-txt {
+    color: #fbfbfb;
+    opacity: 0.7;
+    margin-bottom: 28px;
+}
+
+.sale-commander-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.sale-commander-item {
+    border: 1px solid rgba(251, 251, 251, 0.2);
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 12px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .sale-flex {
+        gap: 40px;
+    }
+    .sale {
+        padding: 40px;
+    }
+    
+        .sale-div-photo {
+            flex-direction: row;
+            column-gap: 20px;
+        }
+    
+        .sale-list {
+            flex-direction: column;
+            row-gap: 10px;
+        }
+    
+        .sale-list-item {
+            padding: 16px 18px;
+        }
+    
+        .sale-hero-img {
+            padding: 80px 112px;
+        }
+
+.sale-commander {
+    padding: 60px;
+}
+
+.commander-title {
+    width: 436px;
+    font-size: 32px;
+}
+
+.commander-list-price {
+    margin-bottom: 30px;
+}
+
+.sale-hero-txt {
+    margin-bottom: 40px;
+}
+
+.sale-commander-list {
+    width: 395px;
+}
+}
+@media screen and (min-width: 1280px) {
+    .sale {
+        padding: 50px 0;
+    }
+    
+    .sale-flex {
+        flex-wrap: nowrap;
+    }
+
+        .sale-list {
+            gap: 10px;
+        }
+ 
+        .sale-hero-img {
+            padding: 80px 50px;
+        }
+    
+        .sale-commander {
+           width: 530px;
+        }
+
+}
+
+
+/* ___________________________sale___________________________________________ */
 /* __________________________________________________________________________ */
 @media screen and (min-width: 768px) {}
 
@@ -717,8 +914,6 @@ button {
 .footer-soc-svg:focus {
     fill: #fbfbfb;
 }
-
-.footer-address {}
 
 .footer-address-btn {
     display: flex;
@@ -786,8 +981,6 @@ button {
     gap: 8px 16px;
 }
 
-.footer-nav-item {}
-
 .footer-address-location {
     font-style: normal;
     font-weight: 500;
@@ -816,8 +1009,6 @@ button {
     display: flex;
     gap: 20px;
 }
-
-.footer-legal-item {}
 
 .footer-legal-link {
     font-weight: 500;
